@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard | DevConnect</title></head>
+<body>
+  <h1>Welcome, <%= user.name %>!</h1>
+  <a href="/create-post">New Post</a>
+  <a href="/api/auth/logout">Logout</a>
+  <% posts.forEach(post => { %>
+    <div>
+      <h3><%= post.title %></h3>
+      <p>By: <%= post.author.name %></p>
+    </div>
+  <% }) %>
+</body>
+</html>

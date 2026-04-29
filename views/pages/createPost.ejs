@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Create Post | DevConnect</title></head>
+<body>
+  <h1>New Post</h1>
+  <form action="/api/posts" method="POST">
+    <input type="text" name="title" placeholder="Title" required/>
+    <textarea name="content" placeholder="Content..." required></textarea>
+    <button type="submit">Publish</button>
+  </form>
+  <a href="/dashboard">Back</a>
+</body>
+</html>
